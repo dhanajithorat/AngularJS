@@ -1,0 +1,7 @@
+Dhanaji	Mac	1	800
+Dhanaji	Odey	1	40000
+Dhanaji	Laptop	1	500
+Dhanaji	Camera	1	200
+Azzi	Pants	10	10
+Azzi	Shirts	15	10
+Azzi	Bag	2	25
