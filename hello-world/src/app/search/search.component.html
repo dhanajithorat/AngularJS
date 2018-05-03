@@ -1,0 +1,30 @@
+<h2>Crash Search(s)</h2>
+<div>
+  <label>Start Date:
+    <input [(ngModel)]="StartDate" placeholder="StartDate"/>
+  </label>
+  <br/>
+  <label>End Date:
+    <input [(ngModel)]="EndDate" placeholder="EndDate"/>
+  </label>
+  <br/>
+  <button (click)="getCrashes()">Get Crashes</button>
+</div>
+
+<ag-grid-angular 
+    style="width: 500px; height: 300px;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    [gridOptions]="gridOptions"
+    >
+</ag-grid-angular>
+<!--
+<ul class="posts">
+  <li *ngFor="let crash of Crashes">
+    <a routerLink="/Crash/{{crash}}">
+      <span class="badge">{{crash}}</span>
+    </a>
+  </li>
+</ul>
+-->

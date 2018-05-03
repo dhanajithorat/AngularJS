@@ -1,0 +1,23 @@
+<h2>Posts</h2>
+<div *ngIf="post">
+  <label>Title:
+    <input [(ngModel)]="post.title" placeholder="title"/>
+  </label>
+  <br/>
+  <label>Body:
+    <input [(ngModel)]="post.body" placeholder="body"/>
+  </label>
+  <br/>
+  <label>User:
+    <input [(ngModel)]="post.userId" placeholder="user"/>
+  </label>
+  <br/>
+  <button (click)="addPost()">Add Post</button>
+</div>
+<ul class="posts">
+  <li *ngFor="let post of posts">
+    <a routerLink="/post/{{post.id}}">
+      <span class="badge">{{post.id}}</span>{{post.title}}
+    </a>
+  </li>
+</ul>

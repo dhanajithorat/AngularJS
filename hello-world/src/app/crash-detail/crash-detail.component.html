@@ -1,0 +1,13 @@
+<div *ngIf='crash'>
+  <h1>Crash Details</h1>
+  <h2>{{crash.id}}</h2>
+  <h3>{{crash.crashdate}}</h3>
+  <p>{{crash.description}}</p>
+  
+  <div *ngFor="let cd of crash.diagrams">
+    <img [src]="'data:image/jpeg;base64,'+cd" width="450px" height=""/>
+  </div>
+  
+
+</div>
+<button (click)="goBack()">go back</button>
